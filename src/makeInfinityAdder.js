@@ -3,16 +3,16 @@
 /***
  * @return {function}
  */
-function makeInfinityAdder() {
+function makeAdder() {
   let counter = 0;
 
   const add = (number) => {
     if (number === undefined) {
-      const reuslt = counter;
+      const result = counter;
 
       counter = 0;
 
-      return reuslt;
+      return result;
     } else {
       counter += number;
 
@@ -23,4 +23,4 @@ function makeInfinityAdder() {
   return add;
 }
 
-module.exports = makeInfinityAdder;
+module.exports = makeAdder;

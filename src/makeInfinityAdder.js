@@ -8,11 +8,11 @@ function makeInfinityAdder() {
 
   const add = (number) => {
     if (number === undefined) {
-      const reult = counter;
+      const reuslt = counter;
 
       counter = 0;
 
-      return reult;
+      return reuslt;
     } else {
       counter += number;
 
